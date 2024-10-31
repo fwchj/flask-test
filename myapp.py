@@ -8,7 +8,7 @@ def home():
 
 @app.get("/user")
 def user():
-    return "this is the user page"
+    return "this is the user page<br><a href='/'>and back again ;-) </a>"
 
 if __name__ == '__main__': # if the script is executed directly, the code block is executed, if the script is imported, the code block is not executed.
     app.run(host='0.0.0.0', port='5070', debug = True) #specify the url and port, and debug = True allows for the server to automatically reload when changes are made to the code
